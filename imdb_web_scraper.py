@@ -233,7 +233,7 @@ if __name__ == '__main__':
 
 	print('Welcome to the IMDb Web Scraper. This script is designed to create a CSV dataset that contains movies and their relevant information ' + 
 		  'for the purposes of data science and machine learning. Following this there will be a series of inputs for you to complete and upon ' +
-		  'their completion, the file will be available in the same directory as where this script is located.\n')
+		  'their completion, the program will run and the CSV file will soon be available in the same directory as where this script is located.\n')
 
 	movie_or_tv()
 	program_genres()
@@ -287,7 +287,7 @@ if __name__ == '__main__':
 			headers = 'title, year, genres, imdb_rating, number_of_votes\n'
 			f.write(headers)
 
-	print('Please be patient while the program creates your dataset. Once it is done, there will be another text pop-up in the console.')
+	print('Please be patient while the your dataset is created. Once it is done, there will be another text pop-up in the console.')
 	print('\n')
 
 	program_sorter()
@@ -309,4 +309,4 @@ if __name__ == '__main__':
 				next_page = parsed_html.findAll('a', {'class':'lister-page-next next-page'})
 				program_sorter()
 	f.close()
-	print('The dataset has been created! Check the directory from where you ran this script and locate "program_list.csv" to access it.')
+	print('The dataset has been created! Check the directory from where you ran this program and locate "program_list.csv" to access it.')
